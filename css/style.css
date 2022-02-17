@@ -1,0 +1,26 @@
+/* span{
+    margin: 5px;
+    padding: 5px 50px;
+    background-color: rgb(194, 200, 206);
+    border-radius: 2px;
+} */
+button{
+    margin: 5px;
+    padding: 5px 50px;
+    background-color: rgb(39, 126, 212);
+    border-radius: 2px;
+    border: none;
+    margin-bottom: 20px;
+}
+h5{
+    margin-bottom: 20px;
+}
+img{
+    height: 100%;
+    width:  100%;
+}
+
+.error{
+    color: red;
+    display: none;
+}

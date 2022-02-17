@@ -40,8 +40,12 @@
 
                 <p>Save: <input type="text" id="saving" placeholder="Saving Amount"> % 
                 <button id="saving-button" >Save</button></p>
-                <h5>Savings Amount: <span id="saving-amount">00</span></h5>
-                <h5>Remaining Balance: <span id="remaining-balance">00</span></h5>
+                <p class="error" id="saving-error">Please input number</p>
+                <p class="error" id="saving-error2">Saving number should be more than 0 and less than 100.</p>
+                <div id="saving-part">
+                    <h5>Savings Amount: <span id="saving-amount">00</span></h5>
+                    <h5>Remaining Balance: <span id="remaining-balance">00</span></h5>
+                </div>
             </div>
         </div>
     </section>

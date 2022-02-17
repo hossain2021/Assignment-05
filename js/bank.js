@@ -60,5 +60,30 @@ document.getElementById('calculate').addEventListener('click', function(){
 
 
 document.getElementById('saving-button').addEventListener('click', function(){
-    console.log(7);
+    const getSavingInput = document.getElementById('saving');
+    const savingInputValue = getSavingInput.value;
+    const savingPercentage = parseFloat(savingInputValue);
+    if(isNaN(savingPercentage)){
+        makeDisplayBlock('saving-error');
+        makeDisplayNone('saving-error2');
+        makeDisplayNone('saving-part');
+    }
+    else if(savingPercentage>100 || savingPercentage<0){
+        makeDisplayNone('saving-error');
+        makeDisplayBlock('saving-error2');
+        makeDisplayNone('saving-part');
+    }
+    else{
+        makeDisplayNone('saving-error');
+        makeDisplayNone('saving-error2');
+        makeDisplayBlock('saving-part');
+        const balanceField = document.getElementById('balance');
+        const balanceText = balanceField.innerText;
+        const balanceAmount = parseFloat(balanceText);
+        const saving = (balanceAmount/100)*savingPercentage;
+        const remainingBalance = balanceAmount-saving;
+        setFieldInnerText('saving-amount', saving);
+        setFieldInnerText('remaining-balance', remainingBalance);
+    }
+
 })

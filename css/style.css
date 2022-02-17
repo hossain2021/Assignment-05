@@ -1,4 +1,11 @@
 /* Basic css styles */
+body{
+    background-color: rgb(0, 36, 36);
+    color: #fff;
+}
+.calculation{
+    background-color: rgba(2, 131, 131, 0.424);
+}
 button{
     margin: 5px;
     padding: 5px 50px;

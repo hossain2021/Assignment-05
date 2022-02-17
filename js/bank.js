@@ -1,4 +1,4 @@
-
+//Fucntion for gettiong input value and error handing;
 function getInputNumber(inputId, errorId){
     const inputField = document.getElementById(inputId);
     const inputValue = inputField.value;
@@ -17,20 +17,25 @@ function getInputNumber(inputId, errorId){
    }
 }
 
+//Function for Setting field innertext
 function setFieldInnerText(FieldId, updateBalance){
     const getField = document.getElementById(FieldId);
     getField.innerText = updateBalance;
 }
 
+//Function for making display block
 function makeDisplayBlock(id){
     const getErrorText = document.getElementById(id);
     getErrorText.style.display = "block";
 }
 
+//Function for making display none
 function makeDisplayNone(id){
     const getErrorText = document.getElementById(id);
     getErrorText.style.display = "none";
 }
+
+//Income and expenses calculation and set to fields
 document.getElementById('calculate').addEventListener('click', function(){
     const income = getInputNumber('income', 'income-error');
     const food = getInputNumber('food', 'food-error');
@@ -58,7 +63,7 @@ document.getElementById('calculate').addEventListener('click', function(){
     }
 })
 
-
+//Saving and remaining balance calculation and set to fields
 document.getElementById('saving-button').addEventListener('click', function(){
     const getSavingInput = document.getElementById('saving');
     const savingInputValue = getSavingInput.value;

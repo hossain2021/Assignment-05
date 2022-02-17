@@ -13,44 +13,51 @@
 <body>
     <section class="m-5">
         <div class="section text-center m-5">
-            <h2>Savings Account</h2>
+            <h2>My Savings Account</h2>
         </div>
         <div class="row">
             <!-- Image part -->
-            <div class="col-lg-6"><img class="img-fluid" src="image/save.jpg" alt=""></div>
+            <div class="col-lg-6 my-2"><img class="img-fluid" src="image/save.jpg" alt=""></div>
             <!-- Calculation part -->
-            <div class="col-lg-6 text-center calculation p-5">
-                <h5>Income</h5>
-                <p>Income: <input type="text" id="income" placeholder="Input number"></p>
-                <p class="error" id="income-error">Please input number</p>
-                <h5>Expenses</h5>
-                
-                <p>Food: <input type="text" id="food" placeholder="Input number"></p>
-                <p class="error" id="food-error">Please input number</p>                
-                <p>Rent: <input type="text" id="rent" placeholder="Input number"></p>
-                <p class="error" id="rent-error">Please input number</p>
-                <p>Clothes: <input type="text" id="clothes" placeholder="Input number"></p>
-                 <p class="error" id="clothes-error">Please input number</p>
-                <button id="calculate">Calculate</button>
-                <p class="error" id="higher-expense-error">Your total expenses is higher than your income! Please try again.</p>
-                <p class="error" id="not-number-error">There is an error. Please try again.</p>
-                <div id="calculation-part">
-                    <h5>Total Expenses: <span id="total-expenses">00</span></h5>
-                    <h5>Balance: <span id="balance">00</span></h5>
-                </div>
+            <div class="col-lg-6 my-2 text-center right-part p-5">
+               <div class="calculation">
+                    <h5>Income</h5>
+                    <p>Income: <input type="text" id="income" placeholder="Input number"></p>
+                    <p class="error" id="income-error">Please input number</p>
+                    <h5>Expenses</h5>
+                    
+                    <p>Food: <input type="text" id="food" placeholder="Input number"></p>
+                    <p class="error" id="food-error">Please input number</p>                
+                    <p>Rent: <input type="text" id="rent" placeholder="Input number"></p>
+                    <p class="error" id="rent-error">Please input number</p>
+                    <p>Clothes: <input type="text" id="clothes" placeholder="Input number"></p>
+                    <p class="error" id="clothes-error">Please input number</p>
+                    <button id="calculate">Calculate</button>
+                    <p class="error" id="higher-expense-error">Your total expenses is higher than your income! Please try again.</p>
+                    <p class="error" id="not-number-error">There is an error. Please try again.</p>
+                    <div id="calculation-part">
+                        <h5>Total Expenses: <span id="total-expenses">00</span></h5>
+                        <h5>Balance: <span id="balance">00</span></h5>
+                    </div>
+               </div>
 
-                <!-- Saving part -->
-                <p>Save: <input type="text" id="saving" placeholder="Saving Amount"> % 
-                <button id="saving-button" >Save</button></p>
-                <p class="error" id="saving-error">Please input number</p>
-                <p class="error" id="saving-error2">Saving number should be more than 0 and less than 100.</p>
-                <div id="saving-part">
-                    <h5>Savings Amount: <span id="saving-amount">00</span></h5>
-                    <h5>Remaining Balance: <span id="remaining-balance">00</span></h5>
+                <div class="saving">
+                    <!-- Saving part -->
+                    <p>Save: <input type="text" id="saving" placeholder="Saving Amount"> % 
+                        <button id="saving-button" >Save</button></p>
+                        <p class="error" id="saving-error">Please input number</p>
+                        <p class="error" id="saving-error2">Saving number should be more than 0 and less than 100.</p>
+                        <div id="saving-part">
+                            <h5>Savings Amount: <span id="saving-amount">00</span></h5>
+                            <h5>Remaining Balance: <span id="remaining-balance">00</span></h5>
+                        </div>
                 </div>
             </div>
         </div>
     </section>
+    <footer>
+        <p class="text-light text-center">Made with love by Delwar Hossain</p>
+    </footer>
     <!-- Script file link -->
     <script src="js/bank.js"></script>
     <script></script>

@@ -3,8 +3,13 @@ body{
     background-color: rgb(0, 36, 36);
     color: #fff;
 }
-.calculation{
+.right-part{
     background-color: rgba(2, 131, 131, 0.424);
+}
+
+.calculation p{
+    text-align: right;
+    margin-right: 30%;
 }
 button{
     margin: 5px;
@@ -25,4 +30,12 @@ img{
 .error{
     color: red;
     display: none;
+    text-align: center;
+}
+
+@media  screen and (max-width: 750px) {
+    .calculation p{
+        text-align: center;
+        margin-right: 0;
+    }
 }
